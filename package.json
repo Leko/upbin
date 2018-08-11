@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/Leko/upbin/issues"
   },
-  "homepage": "https://github.com/Leko/upbin#readme"
+  "homepage": "https://github.com/Leko/upbin#readme",
+  "dependencies": {
+    "find-up": "^3.0.0"
+  }
 }
