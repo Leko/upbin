@@ -42,6 +42,8 @@ It can replace with upbin!
 npm i upbin
 ```
 
+upbin requires Node.js >= 8
+
 ## Usage
 ```
 upbin [binName] [args...]
