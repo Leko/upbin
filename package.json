@@ -9,6 +9,9 @@
     "lint": "eslint './**/*.js'",
     "test": "jest"
   },
+  "engines": {
+    "node": ">=8"
+  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/Leko/upbin.git"
