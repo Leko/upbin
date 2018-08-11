@@ -18,7 +18,7 @@ module will hoist to top-level node_modules when use same version of [Babel](htt
     .bin/
       babel <- It can execute by upbin
   packages/
-    some-pkg/ <- Current workinng directory
+    some-pkg/ <- Current working directory
 ```
 
 If you want to execute top-level bin in `packages/some-pkg/package.json`:
