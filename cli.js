@@ -8,8 +8,9 @@ if (cliArgs.length === 0) {
 }
 
 find(cliArgs[0])
-  .then(bin => execute(bin, cliArgs.slice(1)))
   .catch(error => {
     console.error(`Error: ${error.message}`); // eslint-disable-line no-console
     process.exit(1);
-  });
+  })
+  .then(bin => execute(bin, cliArgs.slice(1)))
+  .then(exitCode => process.exit(exitCode));

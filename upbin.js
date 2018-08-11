@@ -22,7 +22,8 @@ const find = async binName => {
 };
 
 const execute = (bin, args) => {
-  spawnSync(bin, args, { stdio: "inherit" });
+  const { status } = spawnSync(bin, args, { stdio: "inherit" });
+  return status;
 };
 
 module.exports = {
