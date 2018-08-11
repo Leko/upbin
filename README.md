@@ -1,2 +1,54 @@
 # upbin
+
+[![npm](https://img.shields.io/npm/v/upbin.svg)](https://www.npmjs.com/package/upbin)
+[![license](https://img.shields.io/github/license/Leko/upbin.svg)](https://opensource.org/licenses/MIT)
+[![CircleCI](https://circleci.com/gh/Leko/upbin.svg?style=svg)](https://circleci.com/gh/Leko/upbin)
+[![codecov](https://codecov.io/gh/Leko/upbin/branch/master/graph/badge.svg)](https://codecov.io/gh/Leko/upbin)
+
 CLI helper to find and execute a executable file by walking up parent directories.
+
+## Why?
+`upbin` mainly focus on module hoisting.  
+For example, [Yarn workspaces](https://yarnpkg.com/en/docs/workspaces) and [Lerna](https://github.com/lerna/lerna) supports module hoisting.  
+module will hoist to top-level node_modules when use same version of [Babel](https://github.com/babel/babel).
+
+```
+./
+  node_modules/
+    .bin/
+      babel <- It can execute by upbin
+  packages/
+    some-pkg/ <- Current working directory
+```
+
+If you want to execute top-level bin in `packages/some-pkg/package.json`:
+
+```js
+{
+  "scripts": {
+    "prepare": "../../node_modules/.bin/babel ..."
+  }
+}
+```
+
+It can replace with upbin!
+
+```
+    "prepare": "upbin babel ..."
+```
+
+## Install
+```
+npm i upbin
+```
+
+upbin requires Node.js >= 8
+
+## Usage
+```
+upbin [binName] [args...]
+```
+
+## License
+
+This package under [MIT](https://opensource.org/licenses/MIT) license.
