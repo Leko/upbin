@@ -3,7 +3,7 @@ const assert = require("assert");
 const path = require("path");
 const { spawnSync } = require("child_process");
 
-const bin = path.resolve(__dirname, "..", "..", "cli.js");
+const bin = path.resolve(__dirname, "..", "..", "src", "cli.js");
 const opts = {
   cwd: __dirname,
   encoding: "utf8"

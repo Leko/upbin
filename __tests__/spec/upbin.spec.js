@@ -1,7 +1,7 @@
 /* eslint-env jest */
 const assert = require("assert");
 const path = require("path");
-const { find, execute } = require("../../upbin");
+const { find, execute } = require("../../src/upbin");
 
 test("find should reject bin is not exists", async () => {
   try {

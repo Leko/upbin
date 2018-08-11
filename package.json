@@ -3,7 +3,7 @@
   "version": "0.8.0",
   "description": "CLI helper to find and execute a executable file by walking up parent directories",
   "bin": {
-    "upbin": "./cli.js"
+    "upbin": "./src/cli.js"
   },
   "scripts": {
     "lint": "eslint './**/*.js'",
