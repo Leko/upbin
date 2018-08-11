@@ -7,7 +7,7 @@
   },
   "scripts": {
     "lint": "eslint './**/*.js'",
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "engines": {
     "node": ">=8"

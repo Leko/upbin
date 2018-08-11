@@ -21,15 +21,13 @@ module.exports = {
   // collectCoverage: false,
 
   // An array of glob patterns indicating a set of files for which coverage information should be collected
-  // collectCoverageFrom: null,
+  collectCoverageFrom: ["*.js"],
 
   // The directory where Jest should output its coverage files
   coverageDirectory: "coverage",
 
   // An array of regexp pattern strings used to skip coverage collection
-  // coveragePathIgnorePatterns: [
-  //   "/node_modules/"
-  // ],
+  coveragePathIgnorePatterns: ["jest.config.js", "/node_modules/", "__tests__"],
 
   // A list of reporter names that Jest uses when writing coverage reports
   // coverageReporters: [
@@ -124,7 +122,7 @@ module.exports = {
   // snapshotSerializers: [],
 
   // The test environment that will be used for testing
-  testEnvironment: "node",
+  testEnvironment: "node"
 
   // Options that will be passed to the testEnvironment
   // testEnvironmentOptions: {},
