@@ -1,0 +1,27 @@
+{
+  "name": "upbin",
+  "version": "0.8.0",
+  "description": "CLI helper to find and execute a executable file by walking up parent directories",
+  "bin": {
+    "upbin": "./cli.js"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Leko/upbin.git"
+  },
+  "keywords": [
+    "cli",
+    "bin",
+    "monorepo",
+    "executable"
+  ],
+  "author": "Leko <leko.noor@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Leko/upbin/issues"
+  },
+  "homepage": "https://github.com/Leko/upbin#readme"
+}
