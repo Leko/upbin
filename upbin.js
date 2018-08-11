@@ -9,7 +9,7 @@ const access = promisify(fs.access);
 
 const isExecutable = bin => access(bin, X_OK).then(() => true, () => false);
 
-const find = async (binName, { cwd }) => {
+const find = async (binName, { cwd } = {}) => {
   const bin = await findUp(path.join("node_modules", ".bin", binName), { cwd });
   if (!bin) {
     throw new Error(`${binName} not found`);
