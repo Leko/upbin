@@ -3,7 +3,7 @@
 [![npm](https://img.shields.io/npm/v/upbin.svg)](https://www.npmjs.com/package/upbin)
 [![license](https://img.shields.io/github/license/Leko/upbin.svg)](https://opensource.org/licenses/MIT)
 [![CircleCI](https://circleci.com/gh/Leko/upbin.svg?style=svg)](https://circleci.com/gh/Leko/upbin)
-[![codecov](https://codecov.io/gh/Leko/upbin/branch/master/graph/badge.svg)](https://codecov.io/gh/Leko/upbin)
+[![codecov](https://codecov.io/gh/Leko/upbin/branch/master/graph/badge.svg)](https://codecov.io/gh/Leko/upbin) [![Greenkeeper badge](https://badges.greenkeeper.io/Leko/upbin.svg)](https://greenkeeper.io/)
 
 CLI helper to find and execute a executable file by walking up parent directories.
 
