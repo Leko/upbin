@@ -5,12 +5,13 @@
 [![CircleCI](https://circleci.com/gh/Leko/upbin.svg?style=svg)](https://circleci.com/gh/Leko/upbin)
 [![codecov](https://codecov.io/gh/Leko/upbin/branch/master/graph/badge.svg)](https://codecov.io/gh/Leko/upbin) [![Greenkeeper badge](https://badges.greenkeeper.io/Leko/upbin.svg)](https://greenkeeper.io/)
 
-CLI helper to find and execute a executable file by walking up parent directories.
+CLI helper to find and execute an executable file by walking up parent directories.
 
 ## Why?
-`upbin` mainly focus on module hoisting.  
+
+`upbin` mainly focuses on module hoisting.  
 For example, [Yarn workspaces](https://yarnpkg.com/en/docs/workspaces) and [Lerna](https://github.com/lerna/lerna) supports module hoisting.  
-module will hoist to top-level node_modules when use same version of [Babel](https://github.com/babel/babel).
+module will hoist to top-level node_modules when it's using the same version of [Babel](https://github.com/babel/babel).
 
 ```
 ./
@@ -31,13 +32,14 @@ If you want to execute top-level bin in `packages/some-pkg/package.json`:
 }
 ```
 
-It can replace with upbin!
+It can be replaced with upbin!
 
 ```
     "prepare": "upbin babel ..."
 ```
 
 ## Install
+
 ```
 npm i upbin
 ```
@@ -45,10 +47,11 @@ npm i upbin
 upbin requires Node.js >= 8
 
 ## Usage
+
 ```
 upbin [binName] [args...]
 ```
 
 ## License
 
-This package under [MIT](https://opensource.org/licenses/MIT) license.
+This package is released under the [MIT](https://opensource.org/licenses/MIT) license.
