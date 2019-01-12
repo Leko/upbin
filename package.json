@@ -5,6 +5,9 @@
   "bin": {
     "upbin": "./src/cli.js"
   },
+  "files": [
+    "src"
+  ],
   "scripts": {
     "lint": "eslint './**/*.js'",
     "test": "jest --coverage"
