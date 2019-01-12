@@ -5,6 +5,9 @@
   "bin": {
     "upbin": "./src/cli.js"
   },
+  "files": [
+    "src"
+  ],
   "scripts": {
     "lint": "eslint './**/*.js'",
     "test": "jest --coverage"
@@ -12,10 +15,7 @@
   "engines": {
     "node": ">=8"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/Leko/upbin.git"
-  },
+  "repository": "Leko/upbin",
   "keywords": [
     "cli",
     "bin",
@@ -24,15 +24,11 @@
   ],
   "author": "Leko <leko.noor@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Leko/upbin/issues"
-  },
-  "homepage": "https://github.com/Leko/upbin#readme",
   "dependencies": {
     "find-up": "^3.0.0"
   },
   "devDependencies": {
-    "eslint": "^5.3.0",
+    "eslint": "^5.12.0",
     "eslint-plugin-node": "^8.0.0",
     "jest": "^23.5.0"
   }
