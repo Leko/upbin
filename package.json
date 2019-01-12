@@ -12,10 +12,7 @@
   "engines": {
     "node": ">=8"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/Leko/upbin.git"
-  },
+  "repository": "Leko/upbin",
   "keywords": [
     "cli",
     "bin",
@@ -24,10 +21,6 @@
   ],
   "author": "Leko <leko.noor@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Leko/upbin/issues"
-  },
-  "homepage": "https://github.com/Leko/upbin#readme",
   "dependencies": {
     "find-up": "^3.0.0"
   },
