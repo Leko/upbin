@@ -1,6 +1,6 @@
 {
   "name": "upbin",
-  "version": "0.8.1",
+  "version": "0.8.2",
   "description": "CLI helper to find and execute a executable file by walking up parent directories",
   "bin": {
     "upbin": "./src/cli.js"
