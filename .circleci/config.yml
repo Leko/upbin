@@ -3,6 +3,7 @@ workflows:
   node-multi-build:
     jobs:
       - node-v8
+      - node-v10
       - node-latest
   schedule:
     jobs:
@@ -40,6 +41,10 @@ jobs:
     <<: *base
     docker:
       - image: node:8
+  node-v10:
+    <<: *base
+    docker:
+      - image: node:10
   node-latest:
     <<: *base
     docker:
