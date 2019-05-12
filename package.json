@@ -25,7 +25,7 @@
   "author": "Leko <leko.noor@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "find-up": "^3.0.0"
+    "find-up": "^4.0.0"
   },
   "devDependencies": {
     "eslint": "^5.12.0",
